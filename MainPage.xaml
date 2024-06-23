@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="grid.MainPage">
+
+    <ScrollView>
+     <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="p11" Source="p1.jpg" Grid.Row="0"  Grid.Column="0"/>
+            <Image x:Name="p22" Source="p2.jpg" Grid.Row="0"  Grid.Column="1"/>
+            <Image x:Name="p33" Source="p3.jpg" Grid.Row="1"  Grid.Column="0"/>
+            <Image x:Name="p44" Source="p4.jpg" Grid.Row="1"  Grid.Column="1"/>
+            
+        </Grid>
+        <Button x:Name="button" Text="Click" Clicked="button_Clicked"/>
+     </StackLayout>
+  
+    </ScrollView>
+</ContentPage>
